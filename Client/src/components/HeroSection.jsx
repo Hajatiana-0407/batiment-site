@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const HeroSection = () => {
+    const images = [
+    '/assets/model-1.jpg',
+    '/assets/model-2.jpg',
+    '/assets/model-3.jpg'
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(()=>{
+    const interval = setInterval(() => {
+        setCurrentImageIndex(prevIndex =>
+        (prevIndex+1) %images.length
+        )
+    }, 4000);
+  })
   return (
     <>
         <div className='bg-home flex w-full h-screen'>
