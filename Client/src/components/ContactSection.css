@@ -1,0 +1,136 @@
+.contact-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f44336;  /* rouge vif conforme à la maquette */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Carte blanche principale */
+  .contact-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  /* Partie Formulaire */
+  .contact-form-wrapper {
+    flex: 1 1 60%;
+    padding: 40px 50px;
+  }
+  
+  .contact-form-wrapper h2 {
+    margin: 0 0 10px;
+    font-size: 32px;
+    color: #515151;
+    font-weight: 600;
+  }
+  
+  .contact-form-wrapper p {
+    margin: 0 0 30px;
+    color: #777777;
+    line-height: 1.5;
+  }
+  
+  /* Formulaire */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background: #fafafa;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    outline: none;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #bbb;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 6px;
+    background: #62605e;  /* bouton gris foncé */
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Partie infos */
+  .contact-info-wrapper {
+    position: relative;
+    flex: 1 1 40%;
+    background: #666666;  /* gris foncé carte info */
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact-info-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #6d8239;  /* bande verte */
+  }
+  
+  .contact-info-wrapper h3 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: #f5f5f5;
+    text-decoration: underline;
+  }
+  
+  .info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .info-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    color: #f5f5f5;
+    font-size: 16px;
+  }
+  
+  .info-list li svg {
+    margin-right: 12px;
+    font-size: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-card {
+      flex-direction: column;
+    }
+    .contact-info-wrapper::before {
+      display: none;
+    }
+    .contact-info-wrapper {
+      width: 100%;
+      padding: 30px;
+    }
+  }
+  
