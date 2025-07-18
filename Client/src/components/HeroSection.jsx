@@ -42,7 +42,7 @@ const HeroSection = () => {
         className="bg-home min-h-screen flex items-center justify-center px-4 sm:px-10 py-8 sm:py-12"
         style={{
           backgroundImage: `url(${images[currentImageIndex]})`,
-          transition: 'background-image 1s ease-in-out'
+          transition: 'background-image 4s ease-in-out'
         }}
       >
         <div className="container mx-auto flex flex-col lg:flex-row items-center">
@@ -66,14 +66,14 @@ const HeroSection = () => {
               eaque placeat blanditiis!
             </p>
 
-            <div className="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8">
-              <button className="bg-white text-red-600 font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-gray-100 transition text-sm sm:text-base">
-                Qui nous sommes
-              </button>
-              <button className="bg-red-600 text-white font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-red-700 transition text-sm sm:text-base">
-                Contact
-              </button>
-            </div>
+              <div className="flex flex-col sm:flex-row items-center justify-evenly w-full mt-4 sm:mt-6 gap-4 sm:gap-0">
+                  <button className="bg-white text-red-600 font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-gray-100 transition text-base sm:text-lg transform scale-100 sm:scale-[1.35] w-[90%] sm:w-auto">
+                      Qui nous sommes ?
+                  </button>
+                  <button className="bg-red-600 text-white font-semibold px-4 py-2 sm:px-8 sm:py-4 rounded-full hover:bg-red-700 transition text-base sm:text-lg transform scale-100 sm:scale-[1.35] w-[90%] sm:w-auto">
+                      Contact
+                  </button>
+              </div>
           </div>
 
           <div className="hidden lg:block lg:w-1/2 order-1 lg:order-2">
