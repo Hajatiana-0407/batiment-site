@@ -1,16 +1,16 @@
 import './App.css'
+import ArticleSingle from './components/ArticleSingle'
+import Home from './components/Home'
+import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import ContactSection from './components/ContactSection'
-import ArticleSection from './components/ArticleSection'
 function App() {
-
   return (
     <>
-    <Navbar/>
-    <HeroSection/>
-    <ContactSection/>
-    <ArticleSection/>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/article/:id' element={<ArticleSingle />} />
+      </Routes>
     </>
   )
 }
