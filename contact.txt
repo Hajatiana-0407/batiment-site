@@ -1,0 +1,21 @@
+
+***************PARTIE BACK****************************
+
+
+fichier a telecharger : 
+
+	composer require symfony/mailer
+	composer require symfony/validator
+	composer require symfony/serializer
+	composer require symfony/cors-bundle
+
+fichier utile : 
+	Controller/ContactController 
+
+MAILER_DSN=smtp://email@gmail.com:mots_de_passe_application@smtp.gmail.com:587
+
+******************PARTIE FRONT*************************
+
+avec retur si le message est bien envoyer 
+avec responsive
+
