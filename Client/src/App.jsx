@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import ContactSection from './components/ContactSection'
 import ArticleSection from './components/ArticleSection'
+import AboutSection from './components/AboutSection'
 function App() {
 
   return (
@@ -11,6 +12,7 @@ function App() {
     <HeroSection/>
     <ContactSection/>
     <ArticleSection/>
+    <AboutSection/>
     </>
   )
 }
