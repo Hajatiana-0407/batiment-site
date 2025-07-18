@@ -36,3 +36,36 @@
 .bg {
   background-color: #B7D3DF;
 }
+
+.souligne1 {
+  position: relative;
+  display: inline-block;
+}
+
+.souligne1::after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  right: 23px;
+  width: 309px; 
+  height: 5px;
+  background-color: #718731;
+}
+
+.souligne2{
+position: relative;
+display: inline-block;
+
+}
+
+.souligne2::before{
+content: '';
+position: absolute;
+bottom: -11px;
+font-size: 1rem;
+left: 2px;
+width: 265px;
+height: 5px;
+background-color: #718731;
+
+}

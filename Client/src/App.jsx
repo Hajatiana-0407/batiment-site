@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import ContactSection from './components/ContactSection'
 import ArticleSection from './components/ArticleSection'
+import VideoSecction from './components/VideoSecction';
 import Footer from './components/Footer'
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <HeroSection/>
     <ContactSection/>
     <ArticleSection/>
+    <VideoSecction/>
     <Footer/>
     </>
   )
