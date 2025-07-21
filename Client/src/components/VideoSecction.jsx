@@ -55,11 +55,11 @@ function VideoSecction() {
           </div>
         </div> */}
 
-        <div className=' space-y-20'>
+        <div className=' space-y-20 flex md:flex-col flex-col-reverse '>
           {/* Video 1 */}
           <div className="">
             <div className='bg-white p-4 max-w-110 rounded-3xl flex flex-col items-center justify-center'>
-              <video className='max-w-sm  rounded-t-2xl' src={videoData[0].video} controls />
+              <video className='md:max-w-sm  rounded-t-2xl' src={videoData[0].video} controls />
               <div className='bg-white p-5'></div>
             </div>
           </div>
@@ -72,20 +72,20 @@ function VideoSecction() {
 
           </div>
         </div>
-        <div className='space-y-20'>
+        <div className='space-y-20 flex flex-col items-end'>
           {/* Texte Droite */}
           <div className="flex items-center justify-center">
             <div className="w-full text-white">
               <h2 className="lg:text-5xl  md:text-3xl text-2xl souligne1" >{videoData[0].title}</h2>
-              <p className="text-2xl p-6 ">{videoData[0].description}</p>
+              <p className="text-2xl p-6 pe-0 text-left ">{videoData[0].description}</p>
             </div>
 
           </div>
 
           {/* Video 2 */}
           <div className="">
-            <div className='bg-white p-4 max-w-110 rounded-3xl flex flex-col items-center justify-center'>
-              <video className='max-w-sm  rounded-t-2xl' src={videoData[0].video} controls />
+            <div className='bg-white p-4 max-w-110 rounded-3xl flex flex-col items-center justify-center '>
+              <video className='md:max-w-sm  rounded-t-2xl' src={videoData[0].video} controls />
               <div className='bg-white p-5'></div>
             </div>
           </div>
