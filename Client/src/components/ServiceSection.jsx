@@ -1,6 +1,6 @@
 import { useState } from "react";
 import image1 from "../assets/zachary-ferguson-ykQ1HJYcQec-unsplash.jpg";
-import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleRight, FaArrowRight } from "react-icons/fa";
 
 // Données des services
 const liste = [
@@ -104,14 +104,14 @@ export function Service() {
           {/* LISTE DES SERVICES D'ÉTUDES */}
           {/* flex flex-wrap justify-center gap-x-[14vw] gap-y-[2vw] pt-4  */}
 
-          <ul className="lg:grid md:grid-cols-3 gap-5 py-5 mx-auto m-w-[1200]">
+          <ul className="lg:grid grid-cols-2  gap-5 py-5">
             {liste.slice(0, 3).map((listes, index) => {
               const isSpecial = index === 0;
               return (
                 <li
                   key={index}
                   onClick={() => setSelectedItem(listes)}
-                  className="cursor-pointer  min-h-[280px] p-4 shadow-xl rounded-xl transition duration-300 hover:shadow-2xl hover:-translate-y-1 border-2 border-red-500"
+                  className="cursor-pointer  min-h-[280px] p-4 shadow-xl rounded-xl transition duration-300 hover:shadow-2xl  border-2 border-red-500"
                   style={{
                     backgroundColor: isSpecial
                       ? "rgb(247, 71, 71)"
@@ -125,13 +125,26 @@ export function Service() {
                       <div className="text-sm mb-1">{listes.type}</div>
                     </div>
 
-                    <div className="relative w-full h-[250px] overflow-hidden border">
+                    <div className="relative w-full h-[250px] overflow-hidden">
                       <img
                         src={listes.image}
                         alt={listes.nombre}
-                        className="absolute inset-0 w-full  object-cover rounded-3xl z-10"
-                        style={{ marginLeft: "-2%" }}
+                        className="inset-0 w-full  object-cover z-10"
                       />
+                      <span className="text-white flex justify-center items-center  bg-lime-900 text-4xl absolute bottom-0 z-20 right-0 rounded-full w-15 h-15">
+                        <FaArrowRight className="rotate-315" />
+                      </span>
+                      <div
+                        className={`w-30 h-30 absolute bottom-0 right-0`}
+                        style={{
+                          borderRight: `115px solid ${
+                            isSpecial
+                              ? "rgb(247, 71, 71) "
+                              : "rgb(245, 245, 245)"
+                          }`,
+                          borderTop: "118px solid transparent",
+                        }}
+                      ></div>
                     </div>
                   </div>
                 </li>
@@ -156,10 +169,10 @@ export function Service() {
               const realIndex = index + 3;
               const isSpecial = realIndex === 5;
               return (
-                <li
+               <li
                   key={index}
                   onClick={() => setSelectedItem(listes)}
-                  className="cursor-pointer w-[320px] min-h-[280px] p-4 shadow-xl rounded-xl transition duration-300 hover:shadow-2xl hover:-translate-y-1 border-2 border-red-500"
+                  className="cursor-pointer  min-h-[280px] p-4 shadow-xl rounded-xl transition duration-300 hover:shadow-2xl  border-2 border-red-500"
                   style={{
                     backgroundColor: isSpecial
                       ? "rgb(247, 71, 71)"
@@ -173,70 +186,26 @@ export function Service() {
                       <div className="text-sm mb-1">{listes.type}</div>
                     </div>
 
-                    <div className="relative w-[300px] h-[250px] mt-auto mx-auto">
+                    <div className="relative w-full h-[250px] overflow-hidden">
                       <img
                         src={listes.image}
                         alt={listes.nombre}
-                        className="absolute inset-0 w-full h-full object-cover rounded-3xl z-10 p-3"
-                        style={{ marginLeft: "-2%" }}
+                        className="inset-0 w-full  object-cover z-10"
                       />
+                      <span className="text-white flex justify-center items-center  bg-lime-900 text-4xl absolute bottom-0 z-20 right-0 rounded-full w-15 h-15">
+                        <FaArrowRight className="rotate-315" />
+                      </span>
                       <div
-                        className="absolute bottom-0 right-0 z-20"
+                        className={`w-30 h-30 absolute bottom-0 right-0`}
                         style={{
-                          width: "0",
-                          height: "0",
                           borderRight: `115px solid ${
                             isSpecial
-                              ? "rgb(247, 71, 71)"
+                              ? "rgb(247, 71, 71) "
                               : "rgb(245, 245, 245)"
                           }`,
                           borderTop: "118px solid transparent",
-                          marginRight: "18px",
-                          marginBottom: "3px",
                         }}
-                      >
-                        <div
-                          style={{
-                            position: "absolute",
-                            bottom: "5px",
-                            right: "-119px",
-                            height: "50px",
-                            display: "flex",
-                            alignItems: "center",
-                          }}
-                        >
-                          <FaArrowAltCircleRight
-                            style={{
-                              fontSize: "40px",
-                              color: "white",
-                              background: "white",
-                              borderRadius: "50%",
-                              padding: "0px",
-                            }}
-                          />
-                        </div>
-                        <div
-                          className="z-30"
-                          style={{
-                            position: "absolute",
-                            bottom: "5px",
-                            right: "-120px",
-                            height: "50px",
-                            display: "flex",
-                            alignItems: "center",
-                          }}
-                        >
-                          <FaArrowAltCircleRight
-                            className="ml-5"
-                            style={{
-                              fontSize: "54px",
-                              color: "rgb(115, 135, 48)",
-                              borderRadius: "50%",
-                              padding: "0px",
-                            }}
-                          />
-                        </div>
-                      </div>
+                      ></div>
                     </div>
                   </div>
                 </li>
