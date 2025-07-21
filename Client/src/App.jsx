@@ -1,22 +1,23 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import ContactSection from './components/ContactSection'
-import ArticleSection from './components/ArticleSection'
-import VideoSecction from './components/VideoSecction';
-import Footer from './components/Footer'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import ContactSection from "./components/ContactSection";
+import ArticleSection from "./components/ArticleSection";
+import VideoSecction from "./components/VideoSecction";
+import Footer from "./components/Footer";
+import { Service } from "./components/ServiceSection";
 function App() {
-
   return (
     <>
-    <Navbar/>
-    <HeroSection/>
-    <ContactSection/>
-    <ArticleSection/>
-    <VideoSecction/>
-    <Footer/>
+      <Navbar />
+      <HeroSection />
+      <Service />
+      <ContactSection />
+      <ArticleSection />
+      <VideoSecction />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
