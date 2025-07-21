@@ -8,10 +8,6 @@ import {
 import { IoIosArrowForward } from "react-icons/io";
 
 
-import React from 'react';
-import { FaFacebookF, FaWhatsapp, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import { IoIosArrowForward } from 'react-icons/io';
-
 
 import logo from "/assets/Logo_BAT.jpg";
 
