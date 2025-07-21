@@ -11,7 +11,7 @@ const videoData = [
 
   },
   {
-    title: "ETUDE DE MARCHER :",
+    title: "ETUDE DU MARCHER :",
     description:
       "Description  de l'étude des travaux lorem lorem lorem lorem lorem lorem lorem",
     image: "./src/components/images/service.jpg",
