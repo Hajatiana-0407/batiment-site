@@ -6,6 +6,7 @@ import ArticleSection from "./components/ArticleSection";
 import VideoSecction from "./components/VideoSecction";
 import Footer from "./components/Footer";
 import { Service } from "./components/ServiceSection";
+import AboutSection from './components/AboutSection';
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
       <ContactSection />
       <ArticleSection />
       <VideoSecction />
+        <AboutSection/>
       <Footer />
     </>
   );
