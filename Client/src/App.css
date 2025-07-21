@@ -5,10 +5,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
   overflow: hidden;
 }
-
+* { 
+  scroll-behavior: smooth;
+}
 .bg-home::before {
   content: '';
   position: absolute;
@@ -28,8 +29,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
-  height: 75vh;
-  width: 35vw;
+  width: 85%;
+  height: 500px;
   border-radius: 30% 3% 30% 3%;
 }
 

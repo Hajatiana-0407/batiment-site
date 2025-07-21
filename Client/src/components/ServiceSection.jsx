@@ -40,7 +40,7 @@ export function Service() {
   const [selectedItem, setSelectedItem] = useState(null);
 
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto" id="service">
       <div className="p-24 container mx-auto px-4">
         <div className="bg-white py-1 px-6 relative">
           {/* ✅ Fenêtre popup d'information au clic */}

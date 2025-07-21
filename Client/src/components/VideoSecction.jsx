@@ -22,8 +22,8 @@ const videoData = [
 
 function VideoSecction() {
   return (
-    <section className='bg-[#f44336] ' >
-      <div className="lg:grid md:grid-cols-2 gap-10 p-4  max-w-[1400px] mx-auto py-5">
+    <section className='bg-[#f44336] ' id='chantier' >
+      <div className="lg:grid md:grid-cols-2 gap-10 p-4 max-w-[1400px] mx-auto py-24">
         {/* Video */}
         {/* <div className="w-full flex items-center border justify-center">
           <div className='bg-white p-4 rounded-3xl'>

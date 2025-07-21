@@ -4,7 +4,7 @@
     background-color: #f44336;  /* rouge vif conforme à la maquette */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
   }
   
   /* Carte blanche principale */
@@ -16,6 +16,7 @@
     width: 100%;
     display: flex;
     overflow: hidden;
+  
   }
   
   /* Partie Formulaire */
