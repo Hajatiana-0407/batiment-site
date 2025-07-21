@@ -55,7 +55,7 @@ function VideoSecction() {
           </div>
         </div> */}
 
-        <div className=' space-y-20 flex md:flex-col flex-col-reverse '>
+        <div className=' space-y-20 flex md:flex-col flex-col-reverse items-start '>
           {/* Video 1 */}
           <div className="">
             <div className='bg-white p-4 max-w-110 rounded-3xl flex flex-col items-center justify-center'>
