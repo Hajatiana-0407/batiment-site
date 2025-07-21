@@ -3,7 +3,7 @@ import React from 'react';
 import { FaFacebookF, FaWhatsapp, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { IoIosArrowForward } from 'react-icons/io';
 
-import logo from '/home/rado/Bureau/cl/Client/public/assets/Logo_BAT.jpg'
+import logo from '/assets/Logo_BAT.jpg'
 
 const Footer = () => {
   return (
