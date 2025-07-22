@@ -22,8 +22,8 @@ const videoData = [
 
 function VideoSecction() {
   return (
-    <section className='bg-[#f44336] ' >
-      <div className="lg:grid md:grid-cols-2 gap-10 p-4  max-w-[1400px] mx-auto py-5">
+    <section className='bg-[#f44336] ' id='chantier' >
+      <div className="lg:grid md:grid-cols-2 gap-10 p-4 max-w-[1400px] mx-auto py-24">
         {/* Video */}
         {/* <div className="w-full flex items-center border justify-center">
           <div className='bg-white p-4 rounded-3xl'>
@@ -37,12 +37,10 @@ function VideoSecction() {
             <h2 className="lg:text-5xl  md:text-3xl text-2xl souligne1" >{videoData[0].title}</h2>
             <p className="text-2xl p-6 ">{videoData[0].description}</p>
           </div>
-
         </div> */}
         {/* Texte Gauche */}
         {/* <div className="flex items-center justify-center">
           <div className="w-full text-white">
-
             <h2 className='lg:text-5xl md:text-3xl text-2xl souligne2'>{videoData[1].title}</h2>
             <p className='text-2xl p-6'>{videoData[1].description}</p>
           </div  >

@@ -51,7 +51,7 @@ const articles = [
 
 const ArticleSection = () => {
     return (
-        <section className='article-section bg-gray-50 min-h-100 py-5'>
+        <section className='article-section bg-gray-50 min-h-100 py-5' id='blog'>
             <div className='container mx-auto space-y-5'>
                 <SubTitle title='Articles recents' />   
                 <div className='grid grid-cols-3 gap-5'>

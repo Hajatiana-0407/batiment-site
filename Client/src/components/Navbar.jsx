@@ -1,5 +1,7 @@
 import React from 'react'
+import { useAppContext } from './context/AppContext'
 const Navbar = () => {
+  const {activeOnglet,setActiveOnglet}= useAppContext()
   return (
     <>
     <nav className="bg-[#B7D3BF] shadow-md py-3 sm:py-4">
@@ -10,11 +12,11 @@ const Navbar = () => {
 
     {/* Navigation desktop - Inchangée */}
     <ul className="hidden md:flex space-x-4 lg:space-x-6 text-gray-700 font-medium">
-      <li className="hover:text-red-500 cursor-pointer px-1 py-2">Accueil</li>
-      <li className="hover:text-red-500 cursor-pointer px-1 py-2">Blog</li>
-      <li className="hover:text-red-500 cursor-pointer px-1 py-2">Service</li>
-      <li className="hover:text-red-500 cursor-pointer px-1 py-2">Chantier</li>
-      <li className="hover:text-red-500 cursor-pointer px-1 py-2">À propos</li>
+      <li className={`hover:text-red-500 cursor-pointer px-1 py-2 ${activeOnglet == "hero" ? "text-red-500": ""}`}><a href="#hero" className='p-4'>Accueil</a></li>
+      <li className={`hover:text-red-500 cursor-pointer px-1 py-2 ${activeOnglet == "blog" ? "text-red-500": ""}`}><a href="" className='p-4'>Blog</a></li>
+      <li className={`hover:text-red-500 cursor-pointer px-1 py-2 ${activeOnglet == "service" ? "text-red-500": ""}`}><a href="#service" className='p-4'>Service</a></li>
+      <li className={`hover:text-red-500 cursor-pointer px-1 py-2 ${activeOnglet == "chantier" ? "text-red-500": ""}`}><a href="#chantier" className='p-4'>Chantier</a></li>
+      <li className={`hover:text-red-500 cursor-pointer px-1 py-2 ${activeOnglet == "about" ? "text-red-500": ""}`}><a href="#about" className='p-4'>À propos</a></li>
     </ul>
 
     {/* Bouton contact desktop - Inchangé */}
